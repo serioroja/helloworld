@@ -8,13 +8,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define NONE 0
 void earth(void);
 
 int main(void)
 {
+    int i;
+    int number;
+
     printf("Hello planet Earth!\n");
 
-    earth();
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    if (number > NONE)
+    {
+        for (i = 1; i <= number; i++)
+        {
+            earth();
+	}
+    }
+    else
+    {
+        printf("no.\n");
+    }
+
+    printf("\nBye\n");
 
     return (EXIT_SUCCESS);
 }
