@@ -8,9 +8,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void earth(void);
+
 int main(void)
 {
     printf("Hello planet Earth!\n");
 
+    earth();
+
     return (EXIT_SUCCESS);
+}
+
+void earth(void)
+{
+    printf("     ________  \n");
+    printf("    /        \\ \n");
+    printf("   /          \\ \n");
+    printf("  |            |\n");
+    printf("  \\            /\n");
+    printf("   \\          /\n");
+    printf("    ---------\n");
 }
